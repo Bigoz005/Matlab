@@ -1,0 +1,13 @@
+function [ output ] = funckja_pot( A , wart )
+  p=size(A,2)- 1;
+  output = zeros(1, length(wart));
+  
+ for i=1 : length(wart)
+  wynik =0;
+     for j = 1 : size(A,2)
+     wynik = wynik + A(1,i)*(wart.^p);
+     p=p-1;
+ end
+ output(1,i)=wynik;
+ end
+end

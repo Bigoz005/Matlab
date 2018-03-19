@@ -1,0 +1,9 @@
+function  output  = Horner (A,x)
+n=length(A);
+w=0;
+stopien = size(A,2)-1;
+ilosc_mnozen = (stopien*(stopien+1))/2
+
+
+end
+
